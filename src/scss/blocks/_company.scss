@@ -1,0 +1,14 @@
+.company {
+    @include from(1600px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: center;
+        gap: 21px;
+
+        margin: 0 auto;
+        padding: 0 var(--container-padding);
+        max-width: var(--container-width);
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+/* Контейнеры */
+.container {
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+
+	max-width: var(--container-width);
+	width: 100%;
+}
+
+.container-mobile {
+	@media (max-width: 1599px) {
+		margin: 0 auto;
+		padding: 0 var(--container-padding);
+
+		max-width: var(--container-width);
+		width: 100%;
+	}
+}
+
+.container-desktop {
+	@media (min-width: 1600px) {
+		margin: 0 auto;
+		padding: 0 var(--container-padding);
+
+		max-width: var(--container-width);
+		width: 100%;
+	}
+}
+
+.container-no-padding {
+	margin: 0 auto;
+
+	max-width: var(--container-width);
+	width: 100%;
+}
+
+.container-full {
+	padding: 0 var(--container-padding);
+	max-width: 100%;
+}

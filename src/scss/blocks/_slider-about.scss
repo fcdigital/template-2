@@ -1,0 +1,100 @@
+.slider-about {
+    margin-bottom: 30px;
+    background-color: var(--theme-color);
+
+    @include from(1600px) {
+        border-radius: 20px;
+        margin-bottom: 0;
+    }
+}
+
+.slider-about__slider {
+    @include from(1600px) {
+        width: 540px;
+    }
+}
+
+.slider-about__item {
+    padding: 30px 20px;
+
+    @include from(1600px) {
+        padding: 30px;
+    }
+}
+
+.slider-about__title {
+    @include mobile() {
+        max-width: 456px;
+        margin: 0 auto 40px;
+    }
+
+    color: $white;
+    margin-bottom: 40px;
+}
+
+.slider-about__pic {
+    display: block;
+    margin: 0 auto 42px;
+}
+
+.slider-about__name {
+    @include mobile() {
+        max-width: 456px;
+        margin: 0 auto 15px;
+    }
+
+    display: block;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 15px;
+}
+
+.slider-about__description {
+    @include mobile {
+        text-align: justify;
+        max-width: 456px;
+        margin: 0 auto;
+    }
+
+    display: block;
+    color: $white;
+}
+
+.slider-about__controls {
+    display: flex;
+    column-gap: 6px;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    @include from(1600px) {
+        column-gap: 10px;
+    }
+}
+
+.slider-about__control {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include from(1600px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.slider-about__icon {
+    width: 8px;
+    height: 15px;
+    fill: $white;
+
+    @include from(1600px) {
+        width: 12px;
+        height: 22px;
+    }
+}
+
+.slider-about__control--next .slider-about__icon {
+    transform: rotate(180deg);
+}

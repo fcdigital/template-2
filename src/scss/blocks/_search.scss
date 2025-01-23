@@ -1,0 +1,13 @@
+.search__title {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.search__item {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.search__item:not(:last-child) {
+    border-bottom: 1px solid $black;
+}

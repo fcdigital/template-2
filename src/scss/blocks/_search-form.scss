@@ -1,0 +1,35 @@
+.search-form {
+    display: none;
+
+    @include from(1600px) {
+        display: block;
+        position: relative;
+        z-index: 4;
+    }
+}
+
+.search-form__input {
+    color: $black;
+    width: 255px;
+    height: 40px;
+    padding: 7px 10px 7px 46px;
+    border-radius: 10px;
+}
+
+.search-form__input::placeholder {
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.search-form__icon {
+	position: absolute;
+    top: calc(50% - 13px);
+    left: 10px;
+	width: 26px;
+	height: 26px;
+	background-image: url("../../img/search.svg");
+	background-repeat: no-repeat;
+	background-size: 26px 26px;
+}

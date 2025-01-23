@@ -1,0 +1,19 @@
+// @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+html {
+	scroll-behavior: smooth;
+	background-color: var(--page-bg);
+}
+
+body {
+	position: relative;
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-primary);
+	font-style: normal;
+	font-weight: 300;
+}
+
+img {
+	display: block;
+}

@@ -1,0 +1,26 @@
+.description__container {
+    border: 1px solid var(--theme-color);
+    border-radius: 20px;
+    
+
+    @include from(1600px) {
+        overflow: hidden;
+    }
+}
+
+.description__table {
+    margin: 10px -54px;
+    border-collapse: separate; /* Гарантирует наличие промежутков между ячейками */
+    border-spacing: 84px 20px;
+}
+
+.description__row td:first-child {
+    width: 268px;
+}
+.description__row td:nth-child(2) {
+    width: 101px;
+}
+.description__row td:last-child {
+    width: 133px;
+}
+

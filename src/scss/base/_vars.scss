@@ -1,0 +1,29 @@
+:root {
+	--container-padding: 20px;
+	--container-width: 480px;
+	
+	@include from(1600px) {
+		--container-padding: 245px;
+		--container-width: 1600px;
+	}
+
+	--mobile-width: 480px;
+	--desktop-width: 1600px;
+
+	--font-primary: 'Rubik', 'Arial', sans-serif;
+
+	--page-bg: #ffffff;
+	--text-color: #000000;
+	// --theme-color: #376B9C;
+}
+
+/* Colors */
+
+$white: #ffffff;
+$blue: #6b99c3;
+$gray: #6d6864;
+$black-50: rgba(0, 0, 0, 0.5);
+$black: #000000;
+$background-menu: rgba(43, 45, 38, 0.7);
+$background-modal: rgba(217, 217, 217, 0.5);
+$blackout: rgba(114, 115, 110, 0.5);

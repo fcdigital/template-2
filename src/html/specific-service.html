@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Услуга - Полиграфия</title>
+
+    <link rel="icon" type="image/png" href="./img/favicons/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+        :root {
+            --theme-color: rgba(55, 107, 156);
+            --theme-color-transparent: rgba(55, 107, 156, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main class="page-specific-service">
+        <div class="page-specific-service__columns">
+            <div class="page-specific-service__column-1">
+                @@include('blocks/menu.html')
+            </div>
+            <div class="page-specific-service__column-2">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item text-medium"><a class="breadcrumb__link" href="/">Главная</a></li>
+                        <li class="breadcrumb__item breadcrumb__item--service-list text-medium"><a
+                                class="breadcrumb__link" href="./services.html">Рекламные услуги</a>
+                        </li>
+                        <li class="breadcrumb__item breadcrumb__item--service text-medium">Баннеры</li>
+                    </ul>
+                </nav>
+
+                <h1 class="page-specific-service__title title-big">Баннеры</h1>
+            </div>
+            <section class="page-specific-service__column-3 banners">
+                <div class="banners__pic-wrapper">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1600px)" srcset="" width="730" height="300">
+                        <source type="image/webp" srcset="" height="260">
+
+                        <source media="(min-width: 1600px)" srcset="../img/banner.jpg" width="730" height="300">
+                        <img class="banners__pic" src="../img/banner.jpg" alt="Баннер страницы Баннеры" height="260">
+                    </picture>
+
+                    <button class="banners__button consultation-button text-medium">Оставить заявку</button>
+                </div>
+                <div class="banners__description text-medium container-mobile">
+                    <p>Баннеры Саратов. Печать баннеров в
+                        Саратове любых размеров в РА «Альянс». Это направление, в котором мы работаем уже 12 лет и можем
+                        предложить превосходное качество печати и короткие сроки изготовления по одним из самых низких в
+                        городе ценам.</p>
+                    <p>Основное применение широкоформатная печать баннеров
+                        нашла в рекламе, как внутренней, так и наружной. Баннеры любых размеров используют для
+                        оформления выставок, витрин, транспорта,интерьеров, мест торговли и, конечно же, для
+                        изготовления наружной рекламы и вывесок.</p>
+                </div>
+
+                <div class="service-description container-mobile">
+                    <ul class="service-description__list">
+                        <li class="service-description__item service-description__item--current">
+                            <button class="service-description__button text-medium">Варианты изготовления</button>
+                        </li>
+                        <li class="service-description__item">
+                            <button class="service-description__button text-medium">Описание</button>
+                        </li>
+                        <li class="service-description__item">
+                            <button class="service-description__button text-medium">Характеристики</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="banners__list">
+                    <li class="banners__item">
+                        <section class="examples">
+                            <h2 class="examples__title visually-hidden">Варианты изготовления</h2>
+                            <div class="examples__mobile-slider swiper swiperExamples">
+                                <ul class="examples__list swiper-wrapper">
+                                    <li class="examples__item swiper-slide">
+                                        <div class="examples__container">
+
+                                            <picture>
+                                                <source type="image/webp" media="(min-width: 1600px)" srcset=""
+                                                    width="348" height="282">
+                                                <source type="image/webp" srcset="" height="260">
+
+                                                <source media="(min-width: 1600px)"
+                                                    srcset="../img/specific-service/example-1.jpg" width="348"
+                                                    height="282">
+                                                <img class="examples__pic" src="../img/specific-service/example-1.jpg"
+                                                    alt="Иллюстрация к услуге (товару)" height="260">
+                                            </picture>
+
+                                            <div class="examples__pic-blackout"></div>
+                                        </div>
+                                    </li>
+                                    <li class="examples__item swiper-slide">
+                                        <div class="examples__container">
+
+                                            <picture>
+                                                <source type="image/webp" media="(min-width: 1600px)" srcset=""
+                                                    width="348" height="282">
+                                                <source type="image/webp" srcset="" height="260">
+
+                                                <source media="(min-width: 1600px)"
+                                                    srcset="../img/specific-service/example-2.jpg" width="348"
+                                                    height="282">
+                                                <img class="examples__pic" src="../img/specific-service/example-2.jpg"
+                                                    alt="Иллюстрация к услуге (товару)" height="260">
+                                            </picture>
+
+                                            <div class="examples__pic-blackout"></div>
+                                        </div>
+                                    </li>
+                                    <li class="examples__item swiper-slide">
+                                        <div class="examples__container">
+
+                                            <picture>
+                                                <source type="image/webp" media="(min-width: 1600px)" srcset=""
+                                                    width="348" height="282">
+                                                <source type="image/webp" srcset="" height="260">
+
+                                                <source media="(min-width: 1600px)"
+                                                    srcset="../img/specific-service/example-3.jpg" width="348"
+                                                    height="282">
+                                                <img class="examples__pic" src="../img/specific-service/example-3.jpg"
+                                                    alt="Иллюстрация к услуге (товару)" height="260">
+                                            </picture>
+
+                                            <div class="examples__pic-blackout"></div>
+                                        </div>
+                                    </li>
+                                    <li class="examples__item swiper-slide">
+                                        <div class="examples__container">
+
+                                            <picture>
+                                                <source type="image/webp" media="(min-width: 1600px)" srcset=""
+                                                    width="348" height="282">
+                                                <source type="image/webp" srcset="" height="260">
+
+                                                <source media="(min-width: 1600px)"
+                                                    srcset="../img/specific-service/example-4.jpg" width="348"
+                                                    height="282">
+                                                <img class="examples__pic" src="../img/specific-service/example-4.jpg"
+                                                    alt="Иллюстрация к услуге (товару)" height="260">
+                                            </picture>
+
+                                            <div class="examples__pic-blackout"></div>
+                                        </div>
+                                    </li>
+                                    <li class="examples__item swiper-slide">
+                                        <div class="examples__container">
+
+                                            <picture>
+                                                <source type="image/webp" media="(min-width: 1600px)" srcset=""
+                                                    width="348" height="282">
+                                                <source type="image/webp" srcset="" height="260">
+
+                                                <source media="(min-width: 1600px)"
+                                                    srcset="../img/specific-service/example-5.jpg" width="348"
+                                                    height="282">
+                                                <img class="examples__pic" src="../img/specific-service/example-5.jpg"
+                                                    alt="Иллюстрация к услуге (товару)" height="260">
+                                            </picture>
+
+                                            <div class="examples__pic-blackout"></div>
+                                        </div>
+                                    </li>
+                                    <li class="examples__item swiper-slide">
+                                        <div class="examples__container">
+
+                                            <picture>
+                                                <source type="image/webp" media="(min-width: 1600px)" srcset=""
+                                                    width="348" height="282">
+                                                <source type="image/webp" srcset="" height="260">
+
+                                                <source media="(min-width: 1600px)"
+                                                    srcset="../img/specific-service/example-6.jpg" width="348"
+                                                    height="282">
+                                                <img class="examples__pic" src="../img/specific-service/example-6.jpg"
+                                                    alt="Иллюстрация к услуге (товару)" height="260">
+                                            </picture>
+
+                                            <div class="examples__pic-blackout"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="examples__mobile-controls">
+                                    <button class="examples__mobile-control examples__mobile-control--prev">
+                                        <svg class="examples__mobile-icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#left-filled-arrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="examples__mobile-control examples__mobile-control--next">
+                                        <svg class="examples__mobile-icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#left-filled-arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="banners__item">
+                        <section class="description container-mobile">
+                            <h2 class="description__title visually-hidden">Описание</h2>
+                            <div class="description__container" data-simplebar>
+                                <table class="description__table">
+                                    <tr class="description__row">
+                                        <td>Материал</td>
+                                        <td>Плотность, гр.</td>
+                                        <td>Ширина, м</td>
+                                    </tr>
+                                    <tr class="description__row">
+                                        <td>Баннер, Китай</td>
+                                        <td>340</td>
+                                        <td>3.2</td>
+                                    </tr>
+                                    <tr class="description__row">
+                                        <td>Баннер, Корея</td>
+                                        <td>440</td>
+                                        <td>3.2/2.5/2.2/1.6/1.37</td>
+                                    </tr>
+                                    <tr class="description__row">
+                                        <td>Баннер, Канада</td>
+                                        <td>520</td>
+                                        <td>3.2/2.5/2.2</td>
+                                    </tr>
+                                    <tr class="description__row">
+                                        <td>Баннер Литой, Канада</td>
+                                        <td>520</td>
+                                        <td>3.2/1.6</td>
+                                    </tr>
+                                    <tr class="description__row">
+                                        <td>Баннер транлюцетный Backlite, Корея</td>
+                                        <td>520</td>
+                                        <td>3.2/1.6</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+
+                        </section>
+                    </li>
+                    <li class="banners__item">
+                        <section class="characteristics text-medium container-mobile">
+                            <h2>Технические характеристики</h2>
+                            <p>Картельные сговоры не допускают ситуации, при которой элементы политического процесса
+                                будут
+                                ассоциативно распределены по отраслям. Таким образом, постоянный количественный рост и
+                                сфера
+                                нашей активности обеспечивает широкому кругу (специалистов) участие в формировании
+                                системы
+                                массового участия. Но существующая теория предопределяет высокую востребованность
+                                экономической
+                                целесообразности принимаемых решений.</p>
+                            <ul>
+                                <li>В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники
+                                    тоталитаризма
+                                    в науке призваны к ответу. Таким образом, перспективное планирование позволяет
+                                    выполнить
+                                    важные задания по разработке позиций, занимаемых участниками в отношении
+                                    поставленных задач.
+                                    Современные технологии достигли такого уровня, что повышение уровня гражданского
+                                    сознания
+                                    требует от нас анализа поставленных обществом задач.</li>
+                                <li>Следует отметить, что разбавленное изрядной долей эмпатии, рациональное мышление
+                                    требует
+                                    анализа благоприятных перспектив. Учитывая ключевые сценарии поведения, убеждённость
+                                    некоторых оппонентов создаёт предпосылки для своевременного выполнения сверхзадачи.
+                                    Но курс
+                                    на социально-ориентированный национальный проект не оставляет шанса для новых
+                                    предложений.
+                                </li>
+                                <li>Вот вам яркий пример современных тенденций — выбранный нами инновационный путь
+                                    позволяет
+                                    выполнить важные задания по разработке поставленных обществом задач. И нет сомнений,
+                                    что
+                                    многие известные личности могут быть описаны максимально подробно. Приятно,
+                                    граждане,
+                                    наблюдать, как многие известные личности, вне зависимости от их уровня, должны быть
+                                    подвергнуты целой серии независимых исследований.</li>
+                            </ul>
+                            <h2>Как мы производим баннеры?</h2>
+                            <ol>
+                                <li>Если у вас нет своего макета, то сначала наш дизайнер отрисовывает его с учетом
+                                    ваших
+                                    требований. Тут результат работы зависит от того, насколько четко вы обозначите свои
+                                    пожелания. Цветовая гамма, наличие изображений и прочих элементов - все имеет
+                                    значение.
+                                    Сможете ли предоставить варианты готовых макетов других компаний, которые вам
+                                    нравятся
+                                    больше всего. Дизайнер также учтет все необходимые поля и отступы под элементы
+                                    крепления
+                                    баннера при верстке макета.</li>
+                                <li>После согласования макета, готовый графический файл передается на печатное
+                                    производство, где
+                                    изготавливается цветопроба. Это небольшая часть выбранного вида баннера, на котором
+                                    нанесен
+                                    фрагмент согласованного изображения. Это делается для того, чтобы вы видели и
+                                    понимали, в
+                                    каком качестве и какой цветовой гамме будет выполнено готовое изделие.</li>
+                                <li>Цветопроба утверждена? Отлично, теперь мы проступаем непосредственно к процессу
+                                    печати. К
+                                    слову сказать, способ печати напрямую зависит от того, как и где вы будете потом
+                                    размещать
+                                    баннер. Если он будет уличным большого формата, то мы напечатаем его широкоформатной
+                                    печатью
+                                    c разрешением 720 dpi. Это наименее затратный способ печати. При этом, он дает
+                                    достаточное,
+                                    для уличного применения, качество изображения. Оно будет просматриваться с
+                                    расстояния более
+                                    1 м, что как раз и нужно для наружной рекламы. Если же вам нужен баннер для
+                                    пресс-волл или
+                                    для оформления стен и витрин в торговом или любом другом помещении, то баннер
+                                    печатается интерьерной печатью фотографического качества с разрешением 1440 dpi. Она
+                                    дает
+                                    высокое качество изображения, которое можно размещать на небольшом расстоянии от
+                                    глаз. Есть
+                                    еще один способ нанесения изображений на баннеры — уф-печать. Это самый дорогой вид
+                                    печати,
+                                    но его неоспоримое преимущество — стойкость и качество изображения. Если баннер
+                                    будет
+                                    размещен на улице на длительный срок и вам нужно, чтобы изображение долго не
+                                    выцветало на
+                                    солнце, то уместно воспользоваться уф-печатью.</li>
+                                <li>Когда баннер напечатан, мы приступаем к его дальнейшей постобработке : установке
+                                    люверсов,
+                                    склеиванию или свариванию отдельных фрагментов в целое единое полотно. Дополнительно
+                                    возможно покрытие поверхности изделия лаком для защиты изображения.</li>
+                                <li>Заключительным этапом выполняется монтаж баннерного полотна. Его успешность зависит
+                                    от того,
+                                    насколько грамотно был произведен замер конструкции под него.</li>
+                            </ol>
+                            <p>Печать и монтаж баннеров в Саратове выполняется РА Альянс уже 12 лет, так что вы можете
+                                быть
+                                уверены, что получите изделие в высоком качестве и правильно смонтированным.</p>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="other container-desktop">
+            <h2 class="other__title title-big">Вам может быть интересно</h2>
+            <div class="other__slider swiper swiperOther">
+                <ul class="other__list swiper-wrapper">
+                    <li class="other__item swiper-slide">
+                        <div class="other__frame other__frame--first"
+                            style="background-image: url('../img/other/other-1.jpg'); ">
+                            <h3 class="other__item-title title-big">Перфорированная пленка</h3>
+                            <a class="other__button text-medium" href="#">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="other__item swiper-slide">
+                        <div class="other__frame other__frame--second"
+                            style="background-image: url('../img/other/other-2.jpg'); ">
+                            <h3 class="other__item-title title-big">Баннерная сетка</h3>
+                            <a class="other__button text-medium" href="#">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="other__item swiper-slide">
+                        <div class="other__frame other__frame--third"
+                            style="background-image: url('../img/other/other-3.jpg'); ">
+                            <h3 class="other__item-title title-big">Негорючие баннеры Г1 с пожарным сертификатом</h3>
+                            <a class="other__button text-medium" href="#">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="other__item swiper-slide">
+                        <div class="other__frame other__frame--second"
+                            style="background-image: url('../img/other/other-2.jpg'); ">
+                            <h3 class="other__item-title title-big">Баннерная сетка</h3>
+                            <a class="other__button text-medium" href="#">Подробнее</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="other__controls">
+                <button class="other__control other__control--prev">
+                    <svg class="other__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#simple-left-arrow"></use>
+                    </svg>
+                </button>
+                <button class="other__control other__control--next">
+                    <svg class="other__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#simple-left-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        @@include('blocks/company.html')
+    </main>
+    @@include('blocks/footer.html')
+    @@include('blocks/modal.html')
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="./js/specificService.bundle.js"></script>
+</body>
+
+</html>

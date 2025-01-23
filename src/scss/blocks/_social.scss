@@ -1,0 +1,12 @@
+.social__list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--theme-color);
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список услуг - Полиграфия</title>
+
+    <link rel="icon" type="image/png" href="./img/favicons/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+		:root {
+			--theme-color: rgba(55, 107, 156);
+			--theme-color-transparent: rgba(55, 107, 156, 0.7);
+		}
+	</style>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main class="page-services">
+
+        <div class="page-services__columns">
+            <div class="page-services__column-1">
+                @@include('blocks/menu.html')
+            </div>
+
+            <div class="page-services__column-2">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item text-medium"><a class="breadcrumb__link text-medium" href="/">Главная</a></li>
+                        <li class="breadcrumb__item breadcrumb__item--service-list text-medium">Рекламные услуги
+                        </li>
+                    </ul>
+                </nav>
+
+                <h1 class="page-services__title title-big">Рекламные услуги</h1>
+            </div>
+
+            <section class="page-services__column-3 services-directory">
+                <div class="services-directory__container services-directory__mobile-slider swiper swiperServices">
+                    <ul class="services-directory__list swiper-wrapper">
+                        <li class="services-directory__item swiper-slide">
+                            <div class="services-directory__frame services-directory__frame--first" style="background-image: url('../img/ad/ad-1.jpg');">
+                                <h2 class="services-directory__title title-big">Дизайн
+                                    <br>
+                                    полиграфии
+                                </h2>
+                                <a class="services-directory__button text-medium"
+                                    href="./specific-service.html">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="services-directory__item swiper-slide">
+                            <div class="services-directory__frame services-directory__frame--second" style="background-image: url('../img/ad/ad-2.jpg');">
+                                <h2 class="services-directory__title title-big">Оформление торговых
+                                    <br>
+                                    точек фасадов
+                                </h2>
+                                <a class="services-directory__button text-medium" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="services-directory__item swiper-slide">
+                            <div class="services-directory__frame services-directory__frame--third" style="background-image: url('../img/ad/ad-3.jpg');">
+                                <h2 class="services-directory__title title-big">Интерьерная
+                                    <br>
+                                    печать
+                                </h2>
+                                <a class="services-directory__button text-medium" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="services-directory__item swiper-slide">
+                            <div class="services-directory__frame services-directory__frame--fourth" style="background-image: url('../img/ad/ad-4.jpg');">
+                                <h2 class="services-directory__title title-big">Полиграфия</h2>
+                                <a class="services-directory__button text-medium" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="services-directory__item swiper-slide">
+                            <div class="services-directory__frame services-directory__frame--fifth" style="background-image: url('../img/ad/ad-5.jpg');">
+                                <h2 class="services-directory__title title-big">Стенды, таблички,
+                                    <br>
+                                    знаки безопасности
+                                </h2>
+                                <a class="services-directory__button text-medium" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="services-directory__item swiper-slide">
+                            <div class="services-directory__frame services-directory__frame--sixth" style="background-image: url('../img/ad/ad-6.jpg');">
+                                <h2 class="services-directory__title title-big">УФ-печать</h2>
+                                <a class="services-directory__button text-medium" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="services-directory__item swiper-slide">
+                            <div class="services-directory__frame services-directory__frame--seventh" style="background-image: url('../img/ad/ad-5.jpg');">
+                                <h2 class="services-directory__title title-big">Стенды, таблички,
+                                    <br>
+                                    знаки безопасности
+                                </h2>
+                                <a class="services-directory__button text-medium" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="services-directory__item swiper-slide">
+                            <div class="services-directory__frame services-directory__frame--eighth" style="background-image: url('../img/ad/ad-6.jpg');">
+                                <h2 class="services-directory__title title-big">УФ-печать</h2>
+                                <a class="services-directory__button text-medium" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="services-directory__mobile-controls">
+                        <button class="services-directory__mobile-control services-directory__mobile-control--prev">
+                            <svg class="services-directory__mobile-icon">
+                                <use href="./img/svgsprite/sprite.symbol.svg#left-filled-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="services-directory__mobile-control services-directory__mobile-control--next">
+                            <svg class="services-directory__mobile-icon">
+                                <use href="./img/svgsprite/sprite.symbol.svg#left-filled-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        @@include('blocks/company.html')
+
+    </main>
+    @@include('blocks/footer.html')
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/services.bundle.js"></script>
+</body>
+
+</html>

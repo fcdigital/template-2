@@ -1,0 +1,62 @@
+.about__container {
+    padding: 30px 20px;
+
+    &:last-child {
+        padding-bottom: 40px;
+    }
+
+    @include from(1600px) {
+        padding: 30px 0;
+
+        &:last-child {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.about__title {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include from(1600px) {
+        text-align: start;
+    }
+}
+
+.about__description {
+    text-align: justify;
+
+    @include from(1600px) {
+        text-align: start;
+    }
+}
+
+.about__services .about__description {
+    text-align: start;
+    padding: 30px;
+    color: $white;
+}
+
+.about__services {
+    background-color: var(--theme-color);
+
+    @include from(1600px) {
+        border-radius: 20px;
+    }
+}
+
+.about__description li {
+    position: relative;
+    padding-left: 12px;
+}
+
+.about__description li::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    background-color: $white;
+    top: 50%;
+    left: 0;
+}

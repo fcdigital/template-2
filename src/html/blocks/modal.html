@@ -1,0 +1,31 @@
+<section class="modal">
+    <div class="modal__container">
+        <div class="modal__close-wrapper">
+            <button class="modal__close"></button>
+        </div>
+        <h2 class="modal__title title-large">Форма обратной связи</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post" id="form-consultation">
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <input class="modal__name" type="text" name="name" placeholder="Введите имя" required>
+                </li>
+                <li class="modal__item">
+                    <input class="modal__phone" type="tel" name="phone" placeholder="Введите телефон" required>
+                </li>
+                <li class="modal__item">
+                    <input class="modal__email" type="email" name="email" placeholder="Email" required>
+                </li>
+                <li class="modal__item">
+                    <textarea class="modal__comment" name="comment" rows="3" placeholder="Комментарий"></textarea>
+                </li>
+            </ul>
+            <div class="modal__privacy">
+                    <label>
+                        <input id="privacy-input" type="checkbox" name="personal-data" required>
+                        Согласие на обработку
+                        персональных данных</label>
+                </div>
+            <button class="modal__submit text-medium" type="submit">Оставить заявку</button>
+        </form>
+    </div>
+</section>
