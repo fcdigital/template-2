@@ -10,7 +10,7 @@ const swiperOther = new Swiper('.swiperOther', {
     speed: 500,
     loop: true,
     breakpoints: {
-        1600: {
+        1150: {
             slidesPerView: 3,
         }
     },
@@ -38,7 +38,7 @@ buttonNextOther.addEventListener('click', () => {
 
 /* Убираем кнопки управления для слайдера мобильной версии при количестве слайдов меньше 2-х и слайдера дестопной версии при количестве слайдов меньше 4-х */
 
-if (window.innerWidth < 1600) {
+if (window.innerWidth < 1150) {
     if (slides.length < 2) {
         controls.style.display = 'none';
     }

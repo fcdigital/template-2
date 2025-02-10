@@ -85,20 +85,20 @@ if (slider) {
         }
     }
 
-    if (window.innerWidth >= 1600) {
+    if (window.innerWidth >= 1150) {
         removeSwiperClasses(slides, 'swiperExamples');
     }
 
-    /* Функция, добавляющая swiper при изменении ширины вьюпорта с >= 1600 px на < 1600 px, и убирающая его при изменении с < 1600 px на >= 1600 px */
+    /* Функция, добавляющая swiper при изменении ширины вьюпорта с >= 1150 px на < 1150 px, и убирающая его при изменении с < 1150 px на >= 1150 px */
 
     const handleViewportChange = (items, className) => {
         // Получаем текущую ширину вьюпорта
         const viewportWidth = window.innerWidth;
 
-        if (viewportWidth < 1600) {
+        if (viewportWidth < 1150) {
             window.addEventListener('resize', () => {
                 const newViewportWidth = window.innerWidth;
-                if (newViewportWidth >= 1600) {
+                if (newViewportWidth >= 1150) {
 
                     removeSwiperClasses(items, className);
                     handleViewportChange(items, className);
@@ -107,7 +107,7 @@ if (slider) {
         } else {
             window.addEventListener('resize', () => {
                 const newViewportWidth = window.innerWidth;
-                if (newViewportWidth < 1600) {
+                if (newViewportWidth < 1150) {
 
                     addSwiperClasses(items, className);
                     handleViewportChange(items, className);

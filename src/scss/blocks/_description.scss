@@ -1,9 +1,8 @@
 .description__container {
     border: 1px solid var(--theme-color);
     border-radius: 20px;
-    
 
-    @include from(1600px) {
+    @include desktop() {
         overflow: hidden;
     }
 }

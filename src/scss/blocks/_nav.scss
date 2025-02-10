@@ -14,7 +14,7 @@
         top: 0;
     }
 
-    @include from(1600px) {
+    @include desktop() {
         left: 48.8%;
         width: 51.2%;
     }
@@ -25,7 +25,7 @@
     padding: 110px 20px 50px;
     margin: 0 auto;
 
-    @include from(1600px) {
+    @include desktop() {
         padding: 110px 245px 64px 30px;
         margin: 0;
         display: grid;
@@ -60,7 +60,7 @@
 .nav__column-2 .sub-menu {
     padding: 15px 0 15px 15px;
 
-    @include from(1600px) {
+    @include desktop() {
         padding: 15px 0 0 15px;
     }
 }

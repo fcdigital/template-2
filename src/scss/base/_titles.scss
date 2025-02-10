@@ -6,7 +6,7 @@
 		font-size: 53px;
 	}
 
-	@include from(1600px) {
+	@include desktop() {
 		font-size: 90px;
 	}
 }
@@ -19,7 +19,7 @@
 		font-size: 22px;
 	}
 
-	@include from(1600px) {
+	@include desktop() {
 		font-size: 20px;
 	}
 }
@@ -32,7 +32,7 @@
 		font-size: 18px;
 	}
 
-	@include from(1600px) {
+	@include desktop() {
 		font-size: 17px;
 	}
 }
@@ -45,7 +45,7 @@
 		font-size: 16px;
 	}
 
-	@include from(1600px) {
+	@include desktop() {
 		font-size: 15px;
 	}
 }

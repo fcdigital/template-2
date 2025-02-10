@@ -1,7 +1,7 @@
 .other {
     padding-bottom: 40px;
 
-    @include from(1600px) {
+    @include desktop() {
         padding-bottom: 50px;
     }
 }
@@ -11,7 +11,7 @@
     text-align: center;
     margin-bottom: 30px;
 
-    @include from(1600px) {
+    @include desktop() {
         text-align: start;
     }
 }
@@ -19,7 +19,7 @@
 .other__item {
     padding: 0 20px;
 
-    @include from(1600px) {
+    @include desktop() {
         padding: 0;
     }
 }
@@ -37,7 +37,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include from(1600px) {
+    @include desktop() {
         max-width: 348px;
     }
 

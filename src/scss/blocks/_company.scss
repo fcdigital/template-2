@@ -1,5 +1,5 @@
 .company {
-    @include from(1600px) {
+    @include desktop() {
         display: flex;
         flex-direction: row-reverse;
         justify-content: start;

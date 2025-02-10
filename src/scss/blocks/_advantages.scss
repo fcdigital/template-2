@@ -7,7 +7,7 @@
         width: 100%;
     }
 
-    @include from(1600px) {
+    @include desktop() {
         width: 524px;
     }
 }
@@ -17,7 +17,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
 
-    @include from(1600px) {
+    @include desktop() {
         column-gap: 0;
     }
 }
@@ -36,7 +36,7 @@
     background-position: center;
     background-size: 90px;
 
-    @include from(1600px) {
+    @include desktop() {
         min-height: 190px;
         background-size: 120px;
     }

@@ -1,4 +1,6 @@
 .header {
+    overflow: hidden;
+
     @include mobile() {
         padding: 30px 20px;
         background-color: var(--theme-color);
@@ -10,30 +12,48 @@
     grid-template-columns: auto min-content;
     align-items: center;
 
+    @include desktop() {
+        grid-template-columns: 1fr calc(570px + (50% - 555px)*2);
+        padding-left: calc(50% - 555px);
+    }
+
+    @include from(1365px) {
+        grid-template-columns: 1fr calc(570px + (50% - 555px));
+        padding-left: 0;
+    }
+
     @include from(1600px) {
         grid-template-columns: 785px 815px;
+        max-width: 1600px;
+        margin: 0 auto;
     }
 }
 
 .header__column-1 {
-    @include mobile() {
-        justify-self: center;
-        padding: 0 0 0 40px;
-    }
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 34px 30px 34px 40px;
+    justify-self: center;
+    padding: 0 0 0 40px;
+
+    @include desktop() {
+        justify-self: flex-start;
+        width: 100%;
+        padding: 34px 30px 34px 0;
+    }
+
+    @include from(1365px) {
+        padding: 34px 30px 34px 40px;
+    }
 }
 
 .header__column-2 {
-    @include from(1600px) {
+    @include desktop() {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        column-gap: 245px;
         height: 100%;
-        padding: 30px 245px 30px 30px;
+        padding: 30px;
         background-color: var(--theme-color);
     }
 }
@@ -41,10 +61,14 @@
 .header__contacts {
     display: none;
 
-    @include from(1600px) {
+    @include desktop() {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        column-gap: 85px;
+    }
+
+    @include from(1365px) {
         width: 508px;
     }
 }
@@ -58,7 +82,7 @@
     height: 40px;
     fill: $white;
 
-    @include from(1600px) {
+    @include desktop() {
         width: 59px;
         height: 28px;
         fill: var(--theme-color);
@@ -99,10 +123,10 @@
     background-color: var(--theme-color);
     border-radius: 10px;
 
-    @include from(1600px) {
+    @include desktop() {
         --width: 40px;
         --height: 40px;
-        
+
         --line-width: 27.5px;
     }
 }
@@ -115,7 +139,7 @@
         height: 100%;
         border-radius: 10px;
         background-color: $background-menu;
-        
+
     }
 }
 

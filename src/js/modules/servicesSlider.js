@@ -83,7 +83,7 @@ const addSwiperClasses = (items, className) => {
     }
 }
 
-if (window.innerWidth >= 1600) {
+if (window.innerWidth >= 1150) {
     removeSwiperClasses(slides, 'swiperServices');
 }
 
@@ -91,10 +91,10 @@ const handleViewportChange = (items, className) => {
     // Получаем текущую ширину вьюпорта
     const viewportWidth = window.innerWidth;
 
-    if (viewportWidth < 1600) {
+    if (viewportWidth < 1150) {
         window.addEventListener('resize', () => {
             const newViewportWidth = window.innerWidth;
-            if (newViewportWidth >= 1600) {
+            if (newViewportWidth >= 1150) {
                 removeSwiperClasses(items, className);
                 handleViewportChange(items, className);
             }
@@ -102,7 +102,7 @@ const handleViewportChange = (items, className) => {
     } else {
         window.addEventListener('resize', () => {
             const newViewportWidth = window.innerWidth;
-            if (newViewportWidth < 1600) {
+            if (newViewportWidth < 1150) {
 
                 addSwiperClasses(items, className);
                 handleViewportChange(items, className);

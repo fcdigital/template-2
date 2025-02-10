@@ -1,7 +1,7 @@
 .search-form {
     display: none;
 
-    @include from(1600px) {
+    @include desktop() {
         display: block;
         position: relative;
         z-index: 4;

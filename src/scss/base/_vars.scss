@@ -2,13 +2,13 @@
 	--container-padding: 20px;
 	--container-width: 480px;
 	
-	@include from(1600px) {
-		--container-padding: 245px;
-		--container-width: 1600px;
+	@include desktop() {
+		// --container-padding: 245px;
+		--container-width: 1150px;
 	}
 
 	--mobile-width: 480px;
-	--desktop-width: 1600px;
+	--desktop-width: 1150px;
 
 	--font-primary: 'Rubik', 'Arial', sans-serif;
 

@@ -2,14 +2,14 @@
     margin-bottom: 30px;
     background-color: var(--theme-color);
 
-    @include from(1600px) {
+    @include desktop() {
         border-radius: 20px;
         margin-bottom: 0;
     }
 }
 
 .slider-about__slider {
-    @include from(1600px) {
+    @include desktop() {
         width: 540px;
     }
 }
@@ -17,7 +17,7 @@
 .slider-about__item {
     padding: 30px 20px;
 
-    @include from(1600px) {
+    @include desktop() {
         padding: 30px;
     }
 }
@@ -66,7 +66,7 @@
     justify-content: center;
     padding-bottom: 30px;
 
-    @include from(1600px) {
+    @include desktop() {
         column-gap: 10px;
     }
 }
@@ -78,7 +78,7 @@
     justify-content: center;
     align-items: center;
 
-    @include from(1600px) {
+    @include desktop() {
         width: 32px;
         height: 32px;
     }
@@ -89,7 +89,7 @@
     height: 15px;
     fill: $white;
 
-    @include from(1600px) {
+    @include desktop() {
         width: 12px;
         height: 22px;
     }

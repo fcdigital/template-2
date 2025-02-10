@@ -53,7 +53,7 @@ Template Post Type: page, post
                 <div class="banners__pic-wrapper">
 
                     <picture>
-                            <source media="(min-width: 1600px)" srcset="<?php echo esc_url($service['pic']['url']); ?>" width="730" height="300">
+                            <source media="(min-width: 1150px)" srcset="<?php echo esc_url($service['pic']['url']); ?>" width="730" height="300">
                             <img class="banners__pic" src="<?php echo esc_url($service['pic']['url']); ?>" alt="<?php echo esc_attr($service['pic']['alt']); ?>" height="260">
                     </picture>
 
@@ -118,7 +118,7 @@ Template Post Type: page, post
 
                                                     <picture>
                                                         <?php if (!empty($image['url'])) : ?>
-                                                            <source media="(min-width: 1600px)" srcset="<?php echo esc_url($image['url']); ?>" width="348" height="282">
+                                                            <source media="(min-width: 1150px)" srcset="<?php echo esc_url($image['url']); ?>" width="348" height="282">
                                                             <img class="examples__pic" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" height="260">
                                                         <?php endif; ?>
                                                     </picture>

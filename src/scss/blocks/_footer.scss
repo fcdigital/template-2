@@ -3,13 +3,13 @@
 	background-color: var(--theme-color);
 	padding: 30px 0;
 
-	@include from(1600px) {
+	@include desktop() {
 		padding-top: 23px;
 	}
 }
 
 .footer__container {
-	@include from(1600px) {
+	@include desktop() {
 		display: flex;
 		gap: 20px;
 		justify-content: space-between;
@@ -23,7 +23,7 @@
 .footer__column-1 {
 	padding-bottom: 10px;
 
-	@include from(1600px) {
+	@include desktop() {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -38,7 +38,7 @@
 .footer__menu-list {
 	display: none;
 
-	@include from(1600px) {
+	@include desktop() {
 		display: block;
 		display: flex;
 		flex-wrap: wrap;
@@ -54,7 +54,7 @@
 .footer__copyright {
 	text-align: center;
 
-	@include from(1600px) {
+	@include desktop() {
 		text-align: start;
 		padding: 0;
 	}
@@ -63,7 +63,7 @@
 .footer__column-2 {
 	display: none;
 
-	@include from(1600px) {
+	@include desktop() {
 		display: block;
 		margin-top: 7px;
 
@@ -84,7 +84,7 @@
 .footer__column-3 {
 	text-align: center;
 
-	@include from(1600px) {
+	@include desktop() {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;

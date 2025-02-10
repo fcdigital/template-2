@@ -29,7 +29,7 @@ Template Name: Шаблон "Главной страницы"
 							if (!empty($first_slide['slider-main_group_pic'])) :
 							?>
 								<picture>
-									<source media="(min-width: 1600px)" srcset="<?php echo esc_url($first_slide['slider-main_group_pic']['url']); ?>" width="487" height="328">
+									<source media="(min-width: 1150px)" srcset="<?php echo esc_url($first_slide['slider-main_group_pic']['url']); ?>" width="487" height="328">
 									<img class="slider-main__pic" src="<?php echo esc_url($first_slide['slider-main_group_pic']['url']); ?>" alt="<?php echo esc_attr($first_slide['slider-main_group_pic']['alt']); ?>" width="320" height="215">
 								</picture>
 							<?php endif; ?>
@@ -55,7 +55,7 @@ Template Name: Шаблон "Главной страницы"
 										if (!empty($image)) :
 										?>
 											<picture>
-												<source media="(min-width: 1600px)" srcset="<?php echo esc_url($image['url']); ?>" width="487" height="328">
+												<source media="(min-width: 1150px)" srcset="<?php echo esc_url($image['url']); ?>" width="487" height="328">
 												<img class="slider-main__pic" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_url($image['alt']); ?>" width="320" height="215">
 											</picture>
 										<?php endif; ?>
@@ -115,7 +115,7 @@ Template Name: Шаблон "Главной страницы"
 								if (!empty($image['desktop-pic']) || !empty($image['mobile-pic'])) :
 								?>
 									<picture>
-										<source media="(min-width: 1600px)" srcset="<?php echo esc_url($image['desktop-pic']['url']); ?>">
+										<source media="(min-width: 1150px)" srcset="<?php echo esc_url($image['desktop-pic']['url']); ?>">
 										<img class="services__pic" src="<?php echo esc_url($image['mobile-pic']['url']); ?>" alt="<?php echo esc_attr($image['mobile-pic']['alt']); ?>">
 									</picture>
 								<?php endif; ?>
@@ -160,7 +160,7 @@ Template Name: Шаблон "Главной страницы"
 								if ($image) :
 								?>
 									<picture>
-										<source media="(min-width: 1600px)" srcset="<?php echo esc_url($image['url']); ?>" width="456" height="227">
+										<source media="(min-width: 1150px)" srcset="<?php echo esc_url($image['url']); ?>" width="456" height="227">
 										<img class="slider-main__pic" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_url($image['alt']); ?>" width="320" height="159">
 									</picture>
 								<?php endif; ?>

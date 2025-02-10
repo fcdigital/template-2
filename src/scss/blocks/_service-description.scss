@@ -4,7 +4,7 @@
     gap: 15px;
     padding-bottom: 30px;
 
-    @include from(1600px) {
+    @include desktop() {
         display: grid;
         // grid-template-columns: repeat(3, 1fr);
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

@@ -2,7 +2,7 @@
     position: relative;
     padding-bottom: 40px;
 
-    @include from(1600px) {
+    @include desktop() {
         padding-bottom: 50px;
     }
 }
@@ -14,7 +14,7 @@
 
     object-fit: cover;
 
-    @include from(1600px) {
+    @include desktop() {
         height: 300px;
     }
 }
@@ -34,7 +34,7 @@
     border-radius: 10px;
     background-color: $white;
 
-    @include from(1600px) {
+    @include desktop() {
         top: 230px;
     }
 }
@@ -45,7 +45,7 @@
         font-weight: 400;
         margin-bottom: 15px;
 
-        @include from(1600px) {
+        @include desktop() {
             margin-bottom: 30px;
         }
     }
@@ -53,7 +53,7 @@
     &:last-child {
         padding-bottom: 40px;
 
-        @include from(1600px) {
+        @include desktop() {
             padding-bottom: 50px;
         }
     }
@@ -67,7 +67,7 @@
         max-height: 3500px;
         transition: max-height 0.7s ease-in;
 
-        @include from(1600px) {
+        @include desktop() {
             max-height: 2000px;
         }
     }

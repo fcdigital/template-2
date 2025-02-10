@@ -6,7 +6,7 @@
     font-size: 20.6px;
   }
 
-  @include from(1600px) {
+  @include desktop() {
     font-size: 20px;
   }
 }
@@ -19,7 +19,7 @@
     font-size: 16.6px;
   }
 
-  @include from(1600px) {
+  @include desktop() {
     font-size: 20px;
   }
 }
@@ -32,7 +32,7 @@
     font-size: 15.4px;
   }
 
-  @include from(1600px) {
+  @include desktop() {
     font-size: 15px;
   }
 }
@@ -45,7 +45,7 @@
     font-size: 12.2px;
   }
 
-  @include from(1600px) {
+  @include desktop() {
     font-size: 15px;
   }
 }
@@ -54,7 +54,7 @@
   font-size: calc(9px + 2 * ((100vw - 360px) / 1240));
   line-height: 2.9;
 
-  @include from(1600px) {
+  @include desktop() {
     font-size: 9px;
   }
 }

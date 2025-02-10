@@ -1,7 +1,7 @@
 .page-services {
     padding: 40px 0;
 
-    @include from(1600px) {
+    @include desktop() {
         padding: 50px 0 100px;
     }
 }
@@ -22,7 +22,7 @@
 .page-services__columns {
     padding-bottom: 30px;
 
-    @include from(1600px) {
+    @include desktop() {
         display: grid;
         grid-template-columns: 294px 727px;
         column-gap: 87px;

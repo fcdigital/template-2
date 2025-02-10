@@ -5,7 +5,7 @@
         padding-bottom: 40px;
     }
 
-    @include from(1600px) {
+    @include desktop() {
         padding: 30px 0;
 
         &:last-child {
@@ -19,7 +19,7 @@
     text-align: center;
     margin-bottom: 32px;
 
-    @include from(1600px) {
+    @include desktop() {
         text-align: start;
     }
 }
@@ -27,7 +27,7 @@
 .about__description {
     text-align: justify;
 
-    @include from(1600px) {
+    @include desktop() {
         text-align: start;
     }
 }
@@ -41,7 +41,7 @@
 .about__services {
     background-color: var(--theme-color);
 
-    @include from(1600px) {
+    @include desktop() {
         border-radius: 20px;
     }
 }

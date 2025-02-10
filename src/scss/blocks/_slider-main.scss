@@ -1,5 +1,7 @@
 .slider-main {
-    @include from(1600px) {
+    @include desktop() {
+        display: flex;
+        align-items: center;
         border-bottom-left-radius: 20px;
         background-color: var(--theme-color);
     }
@@ -30,7 +32,7 @@
     margin: -15px auto 15px;
     object-fit: cover;
 
-    @include from(1600px) {
+    @include desktop() {
         margin-top: -35px;
     }
 }
