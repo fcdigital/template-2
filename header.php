@@ -28,7 +28,7 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<header class="header">
-		<div class="header__columns container-no-padding">
+		<div class="header__columns">
 			<div class="header__column-1">
 
 				<?php
