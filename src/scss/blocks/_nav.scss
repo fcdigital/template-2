@@ -46,7 +46,7 @@
 }
 
 .nav__name,
-.nav__column-2 .nav__list > li > a {
+.nav__column-2 .nav__list>li>a {
     text-transform: uppercase;
 }
 
@@ -76,10 +76,10 @@
     transition: max-height 0.5s ease-in -0.4s, padding-top 0.05s ease-in;
 }
 
-.nav__column-1 .nav__list > li > a {
+.nav__column-1 .nav__list>li>a {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .nav__arrow {
@@ -100,4 +100,11 @@
 .nav__column-1 .nav__show {
     padding-top: 15px;
     max-height: 500px;
+}
+
+.nav__list > li > a[href]:not([href="#"]),
+.sub-menu > li > a[href]:not([href="#"]) {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
 }

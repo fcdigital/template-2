@@ -80,3 +80,9 @@
     padding-top: 20px;
     max-height: 500px;
 }
+
+.menu__list > li > a[href]:not([href="#"]) {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
